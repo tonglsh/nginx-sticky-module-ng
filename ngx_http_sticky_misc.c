@@ -12,6 +12,14 @@
 
 #include "ngx_http_sticky_misc.h"
 
+#ifndef SHA_DIGEST_LENGTH
+#define SHA_DIGEST_LENGTH 20
+#endif
+
+#ifndef SHA_CBLOCK
+#define SHA_CBLOCK 64
+#endif
+
 #ifndef ngx_str_set
   #define ngx_str_set(str, text) (str)->len = sizeof(text) - 1; (str)->data = (u_char *) text
 #endif
