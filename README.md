@@ -1,5 +1,6 @@
 # Nginx Sticky Module 
 
+支持 nginx-nginx_upstream_check_module 模块，与该模块一起使用时，健康检查优先，不会存在一直访问不健康的粘连节点的情况
 
 modified and extended version; see Changelog.txt 
 
